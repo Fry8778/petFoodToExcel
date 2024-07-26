@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <button id="exportButton">Выгрузить в Excel</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
+
+    <!-- NovusZakaz.ua -->
+
+    <script type="module">        
+        import {zakazuaNovusExportToExcel} from "./novus.js/zakazuaNovusExportToExcel.js";
+        document.getElementById('exportButton').addEventListener('click', zakazuaNovusExportToExcel);
+    </script>
+
+    <!-- Varus -->
+
+    <!-- <script type="module">
+        import { varusExportToExcel } from "./varus.js/varusExportToExcel.js";
+        document.getElementById('exportButton').addEventListener('click', varusExportToExcel);
+    </script> -->
+</body>
+
+</html>
